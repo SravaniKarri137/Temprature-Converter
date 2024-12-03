@@ -1,0 +1,83 @@
+/* Reset some basic styles */
+body, h1, input, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a professional font and background */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the container */
+.container {
+    background-color: #ffffff1a;
+    backdrop-filter: blur(10px);
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f0f8ff;
+}
+
+/* Row styling */
+.converter-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Input column styling */
+.col {
+    flex: 1;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input and label styling */
+label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #b0c4de;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+    border-color: #6a93cb;
+    box-shadow: 0 0 10px rgba(106, 147, 203, 0.5);
+}
+
+/* Button styling */
+input::placeholder {
+    font-style: italic;
+    color: #ccc;
+}
